@@ -3,6 +3,7 @@ exports.install = function() {
 	F.route('/services/{name}/', view_services)
     F.route('/contact/', view_contact)
     F.route('/contact/', json_contanct, ['post'])
+    F.route('/vloz/{name}/', view_vloz)
 };
 
 function view_index() {
